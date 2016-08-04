@@ -47,8 +47,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <div class="w3-third w3-container w3-margin-bottom">
       <img src="http://gogmat.com/images/guessing%2021.png" alt="Guessing" style="width:75%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-	<p><a href="hangman.html" align="center">Hangman</a></p>
-	<p><a href="guessThatPhrase.html" align="center">Guess That Phrase</a></p>
+	<p><a href="hangman.php" align="center">Hangman</a></p>
+	<p><a href="guessThatPhrase.php" align="center">Guess That Phrase</a></p>
       </div>
     </div>
   </div>
