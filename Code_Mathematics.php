@@ -47,8 +47,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <div class="w3-third w3-container w3-margin-bottom">
       <img src="https://hgms.files.wordpress.com/2014/03/math.jpg" alt="Math" style="width:75%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
- 	<p><a href="numberGame.html" align="center">Number Game</a></p>
-	<p><a href="problem.html" align="center">Problem Sums</a></p>
+ 	<p><a href="numberGame.php" align="center">Number Game</a></p>
+	<p><a href="problem.php" align="center">Problem Sums</a></p>
       </div>
     </div>
   </div>
