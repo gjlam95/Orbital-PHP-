@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<title>The Ghost of Mrs Basil</title>
+<head>
+<script language="javascript">
+      function processPage() {
+      
+      var tempType;
+      
+      for (var i=0; i < document.ansForm.choice.length; i++) {
+        if (document.ansForm.choice[i].checked) {
+          tempType = document.ansForm.choice[i].value;
+        }
+      }
+      if (tempType == 'white') {
+        var next = confirm("Correct!\n\n" + "Only Mrs Blank and Mrs Rainbow kept a hand under the table.\n" + "But Mrs Rainbow had the rope.\n" + "She couldn't have used the rope to make the crisp rapping noises the group heard.\n");
+        if (next == true) {
+          window.history.back();
+        }
+      }
+      
+      else {
+        var next = confirm("Wrong!\n\n" + "Hint?");
+        if (next == true) {
+          alert("Doctor Melon was holding on to Mrs Blank and Miss Roses' hands.\n" +  "Mr Leaf was holding on to General Lemon and Mr Basils' hands.\n" + "Mrs Rainbow was holding on to General Lemon's hand.\n" + "Miss Rose was holding on to Doctor Melon and Mr Basils' hands.\n" + "Mrs Blank was holding on to Professor Plm's hand.\n\n" + "Hmm,there are still two guests with one hand underneath the table, but one of them is holding an item which could not possibly make the crisp rapping noise...")
+        }
+      }
+    }
+</script>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.w3-sidenav a,.w3-sidenav h4{padding:12px;}
+.w3-navbar a{padding-top:12px !important;padding-bottom:12px !important;}
+</style>
+
+<body>
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Background</h1>
+      <p>Mr Basil had gathered all of the guests in the Dining Room for a ritual to summon his late wife. 
+  The ritual required everyone to hold hands together in order to communicate with Mrs Basil. 
+  Mrs Basil would answer by making a rapping sound under the table. One rap for yes. two raps for no. 
+  At the end, Mr Basil was pleased to have spoken to his late wife and finally found peace through the process.. or was it just a hoax? 
+  Find out which of the suspects was the fake ghost. 
+  (Hint: It has to be someone whose hand is free to use their weapons to making the rapping sound!).
+</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">The Ritual</h1>
+      <p>The guest were all carrying their weapons throughout the ritual</p>
+<p>Doctor Melon: "I had the Knife with me as I had forgotten to leave it in my room before coming down. I was holding on to Mrs Blank's and Miss Rose's hands until I let go of the latter's for a brief moment to scratch my foot."</p>
+<p>Mr Leaf: "I had the Steel Rod with me. I was holding on to General Lemon's hand and that fellow kept complaining that I was holding onto it so tightly that he challenged me to a duel. Pmft! Oh, and I was holding Mr Basil's hand too."</p>
+<p>General Lemon: "Yeah, I had the Spanner. Stupid Mr Leaf and his grip!"</p>
+<p>Mrs Rainbow: "I brought along the Rope just in case we needed it. And I was holding onto General Lemon's hand. Such a big hand he has."</p>
+<p>Miss Rose: "Don't ask me why I had the Pistol. I am just cautious like that. But I felt safe having Mr Basil beside me and holding my hand."</p>
+<p>Mrs Blank: "I brought the Candlestick as I was afraid the Dining Room's lights will blow again. Doctor Melon has really sweaty palms!"</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Who was it?</h1>
+      <form name="ansForm">
+  <p>Answer:</p>
+  <input type="radio" name="choice" value="plum">Doctor Melon<br>
+  <input type="radio" name="choice" value="white">Mrs Blank<br>
+  <input type="radio" name="choice" value="scarlett">Miss Rose<br>
+  <input type="radio" name="choice" value="green">Mr Leaf<br>
+  <input type="radio" name="choice" value="mustard">General Lemon<br>
+  <input type="radio" name="choice" value="peacock">Mrs Rainbow<br>
+  <br>
+  <input type="button" value="Check" onclick="processPage()">
+</form>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
