@@ -47,7 +47,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <div class="w3-third w3-container w3-margin-bottom">
       <img src="http://www.primitivism.com/miscellaneous-ban.jpg" alt="Misc" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-	<p align="left"><a href="magicSquares.html" align="center">Magic Squares</a></p>
+	<p align="left"><a href="magicSquares.php" align="center">Magic Squares</a></p>
       </div>
     </div>
   </div>
