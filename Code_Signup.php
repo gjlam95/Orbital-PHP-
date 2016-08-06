@@ -3,7 +3,8 @@ include('db.php');
 if(isset($_POST['action']))
 { 
 	if($_POST['action']=="signup") {
-        $name       = mysqli_real_escape_string($connection,$_POST['user_username']);
+        $name       = mysqli_real_escape_string($connection,$_POST['user_name']);
+        $username   = mysqli_real_escape_string($connection,$_POST['user_username']);
         $email      = mysqli_real_escape_string($connection,$_POST['user_email']);
         $password   = mysqli_real_escape_string($connection,$_POST['user_password']);
         $query = "SELECT user_email FROM user_details where user_email='".$email."'";
@@ -19,7 +20,7 @@ if(isset($_POST['action']))
         }
         else
         {
-            mysql_query("insert into users(name,email,password) values('".$name."','".$email."','".$password."')");
+            mysql_query("insert into users(user_name,user_username,user_email,user_password) values('".$name."','".$username."','".$email."','".$password."')");
             $message = "Signup Sucessfully!!";
         }
     }
