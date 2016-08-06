@@ -4,11 +4,11 @@ if(isset($_POST['action']))
 {          
         $email = mysqli_real_escape_string($connection,$_POST['email']);
         $password = mysqli_real_escape_string($connection,$_POST['password']);
-        $strSQL = mysqli_query($connection,"select user_name from user_details where user_email='".$email."' and user_password='".$password."'");
+        $strSQL = mysqli_query($connection,"select name from users where email='".$email."' and password='".$password."'");
         $Results = mysqli_fetch_array($strSQL);
         if(count($Results)>=1)
         {
-            $message = $Results['user_name']." Login Sucessfully!!";
+            $message = $Results['name']." Login Sucessfully!!";
         }
         else
         {
