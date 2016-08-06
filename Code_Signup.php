@@ -1,3 +1,31 @@
+<?php
+include('db.php');
+if(isset($_POST['action']))
+{ 
+	if($_POST['action']=="signup") {
+        $name       = mysqli_real_escape_string($connection,$_POST['user_username']);
+        $email      = mysqli_real_escape_string($connection,$_POST['user_email']);
+        $password   = mysqli_real_escape_string($connection,$_POST['user_password']);
+        $query = "SELECT user_email FROM user_details where user_email='".$email."'";
+        $result = mysqli_query($connection,$query);
+        $numResults = mysqli_num_rows($result);
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) // Validate email address
+        {
+            $message =  "Invalid email address please type a valid email!!";
+        }
+        elseif($numResults>=1)
+        {
+            $message = $email." Email already exist!!";
+        }
+        else
+        {
+            mysql_query("insert into users(name,email,password) values('".$name."','".$email."','".$password."')");
+            $message = "Signup Sucessfully!!";
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <title>MINYSTERY</title>
