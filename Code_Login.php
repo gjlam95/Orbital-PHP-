@@ -4,8 +4,8 @@ if(isset($_POST['action']))
 {          
     if($_POST['action']=="login")
     {
-        $email = mysqli_real_escape_string($connection,$_POST['user_email']);
-        $password = mysqli_real_escape_string($connection,$_POST['user_password']);
+        $email = mysqli_real_escape_string($connection,$_POST['email']);
+        $password = mysqli_real_escape_string($connection,$_POST['password']);
         $strSQL = mysqli_query($connection,"select user_name from user_details where user_email='".$email."' and user_password='".$password."'");
         $Results = mysqli_fetch_array($strSQL);
         if(count($Results)>=1)
