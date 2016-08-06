@@ -5,7 +5,7 @@ if(isset($_POST['action']))
         $name       = mysqli_real_escape_string($connection,$_POST['name']);
         $email      = mysqli_real_escape_string($connection,$_POST['email']);
         $password   = mysqli_real_escape_string($connection,$_POST['password']);
-        $query = "SELECT user_email FROM user_details where user_email='".$email."'";
+        $query = "SELECT email FROM users where email='".$email."'";
         $result = mysqli_query($connection,$query);
         $numResults = mysqli_num_rows($result);
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) // Validate email address
@@ -18,7 +18,7 @@ if(isset($_POST['action']))
         }
         else
         {
-            mysql_query("insert into users(user_name,user_email,user_password) values('".$name."','".$email."','".$password."'");
+            mysql_query("insert into users(name,email,password) values('".$name."','".$email."','".$password."'");
             $message = "Signup Sucessfully!!";
         }
 }
