@@ -167,7 +167,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <input id="password" type="password" placeholder="Password"/>
       <input name="action" type="hidden" value="login"/>
       <input type="submit" value="Log In"/>
-      <p class="message">Not registered? <a href="Code_Signup.html">Create an account</a></p>
+      <p class="message">Not registered? <a href="Code_Signup.php">Create an account</a></p>
     </form>
   </div>
 </div>
