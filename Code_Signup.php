@@ -175,7 +175,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <input id="password" type="password" placeholder="Password"/>
       <input name="action" type="hidden" value="signup"/>
       <input type="submit" value="Sign Up"/>
-      <p class="message">Already registered? <a href="Code_Login.html">Sign In</a></p>
+      <p class="message">Already registered? <a href="Code_Login.php">Sign In</a></p>
     </form>
   </div>
 </div>
