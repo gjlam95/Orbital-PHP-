@@ -3,9 +3,9 @@ include('db.php');
 if(isset($_POST['action']))
 { 
 	if($_POST['action']=="signup") {
-        $name       = mysqli_real_escape_string($connection,$_POST['user_name']);
-        $email      = mysqli_real_escape_string($connection,$_POST['user_email']);
-        $password   = mysqli_real_escape_string($connection,$_POST['user_password']);
+        $name       = mysqli_real_escape_string($connection,$_POST['name']);
+        $email      = mysqli_real_escape_string($connection,$_POST['email']);
+        $password   = mysqli_real_escape_string($connection,$_POST['password']);
         $query = "SELECT user_email FROM user_details where user_email='".$email."'";
         $result = mysqli_query($connection,$query);
         $numResults = mysqli_num_rows($result);
