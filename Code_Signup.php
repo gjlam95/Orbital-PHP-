@@ -2,7 +2,6 @@
 include('db.php');
 if(isset($_POST['action']))
 { 
-	if($_POST['action']=="signup") {
         $name       = mysqli_real_escape_string($connection,$_POST['name']);
         $email      = mysqli_real_escape_string($connection,$_POST['email']);
         $password   = mysqli_real_escape_string($connection,$_POST['password']);
@@ -22,7 +21,6 @@ if(isset($_POST['action']))
             mysql_query("insert into users(user_name,user_email,user_password) values('".$name."','".$email."','".$password."'");
             $message = "Signup Sucessfully!!";
         }
-    }
 }
 ?>
 
@@ -172,7 +170,6 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <input id="name" type="text" placeholder="Name"/>
       <input id="email" type="text" placeholder="Email"/>
       <input id="password" type="password" placeholder="Password"/>
-      <input name="action" type="hidden" value="signup"/>
       <input type="submit" value="Sign Up"/>
       <p class="message">Already registered? <a href="Code_Login.php">Sign In</a></p>
     </form>
