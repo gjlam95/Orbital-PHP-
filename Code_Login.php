@@ -2,6 +2,7 @@
 include('db.php');
 if(isset($_POST['action']))
 {          
+	if($_POST['action']=="login") {
         $email = mysqli_real_escape_string($connection,$_POST['email']);
         $password = mysqli_real_escape_string($connection,$_POST['password']);
         $strSQL = mysqli_query($connection,"select name from users where email='".$email."' and password='".$password."'");
@@ -14,6 +15,7 @@ if(isset($_POST['action']))
         {
             $message = "Invalid email or password!!";
         }        
+	}
 }
 ?>
 
@@ -162,6 +164,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <form class="login-form" action="" method="post">
       <input id="email" type="text" placeholder="Email"/>
       <input id="password" type="password" placeholder="Password"/>
+      <input name="action" type="hidden" value="login" /></p>
       <input type="submit" value="Log In"/>
       <p class="message">Not registered? <a href="Code_Signup.php">Create an account</a></p>
     </form>
