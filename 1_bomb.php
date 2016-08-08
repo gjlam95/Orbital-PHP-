@@ -103,25 +103,25 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <li class="dropdown">
     <a href="#" class="dropbtn">Level 1</a>
     <div class="dropdown-content">
-      <a href="1_bomb.html">The Gift</a>
-      <a href="1_ghost.html">The Ghost of Mrs Basil</a>
-      <a href="1_hide.html">Hide & Seek</a>
+      <a href="1_bomb.php">The Gift</a>
+      <a href="1_ghost.php">The Ghost of Mrs Basil</a>
+      <a href="1_hide.php">Hide & Seek</a>
     </div>
     </li>
   <li class="dropdown">
     <a href="#" class="dropbtn">Level 2</a>
     <div class="dropdown-content">
-      <a href="2_murder.html">The Planned Murder</a>
-      <a href="2_music.html">The Unfortunate Music Party</a>
-      <a href="2_basil.html">Death of Mr Basil</a>
+      <a href="2_murder.php">The Planned Murder</a>
+      <a href="2_music.php">The Unfortunate Music Party</a>
+      <a href="2_basil.php">Death of Mr Basil</a>
     </div>
   </li>
     <li class="dropdown">
     <a href="#" class="dropbtn">Level 3</a>
     <div class="dropdown-content">
-      <a href="3_april.html">April Fools</a>
-      <a href="3_fire.html">The Fire</a>
-      <a href="3_film.html">Rolls of Film</a>
+      <a href="3_april.php">April Fools</a>
+      <a href="3_fire.php">The Fire</a>
+      <a href="3_film.php">Rolls of Film</a>
     </div>
   </li>
 </ul>
