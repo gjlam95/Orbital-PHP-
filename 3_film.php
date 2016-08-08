@@ -94,6 +94,36 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
 
 <body>
+    <!-- Horizontal dropdown menu -->
+<ul>
+  <li>
+    <a class="active" href="Code_Home.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Level 1</a>
+    <div class="dropdown-content">
+      <a href="1_bomb.php">The Gift</a>
+      <a href="1_ghost.php">The Ghost of Mrs Basil</a>
+      <a href="1_hide.php">Hide & Seek</a>
+    </div>
+    </li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Level 2</a>
+    <div class="dropdown-content">
+      <a href="2_murder.php">The Planned Murder</a>
+      <a href="2_music.php">The Unfortunate Music Party</a>
+      <a href="2_basil.php">Death of Mr Basil</a>
+    </div>
+  </li>
+    <li class="dropdown">
+    <a href="#" class="dropbtn">Level 3</a>
+    <div class="dropdown-content">
+      <a href="3_april.php">April Fools</a>
+      <a href="3_fire.php">The Fire</a>
+      <a href="3_film.php">Rolls of Film</a>
+    </div>
+  </li>
+</ul>
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
       <h1 class="w3-text-teal">Background</h1>
