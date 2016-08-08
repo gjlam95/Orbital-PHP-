@@ -76,12 +76,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Who has the old woman?</h1>
+      <h1 class="w3-text-teal">Who was the old woman?</h1>
   <form name="ansForm">
   <p>Answer:</p>
   <input type="radio" name="choice" value="plum">Doctor Melon<br>
   <input type="radio" name="choice" value="white">Mrs Blank<br>
-  <input type="radio" name="choice" value="scarlett">Miss Roset<br>
+  <input type="radio" name="choice" value="scarlett">Miss Rose<br>
   <input type="radio" name="choice" value="green">Mr Leaf<br>
   <input type="radio" name="choice" value="mustard">General Lemon<br>
   <input type="radio" name="choice" value="peacock">Mrs Rainbow<br>
