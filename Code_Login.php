@@ -7,13 +7,13 @@ include('db.php');
         $Results = mysqli_fetch_array($strSQL);
         if(count($Results)>=1)
         {
-            $message = $Results['name']." Login Sucessfully!!";
+            $_SESSION["in"]=$row["id"];
+            header("Location:index.php");
         }
         else
         {
             $message = "Invalid email or password!!";
         }
-        echo $message;
 }
 ?>
 
@@ -162,6 +162,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <form class="login-form" action="" method="post">
       <input name="email" type="text" placeholder="Email"/>
       <input name="password" type="password" placeholder="Password"/>
+      <?php
+      	if (!empty($message)) {
+      		echo $message;
+      	}
+      ?>
       <input name="action" type="hidden" value="login" /></p>
       <input type="submit" value="Log In"/>
       <p class="message">Not registered? <a href="Code_Signup.php">Create an account</a></p>
