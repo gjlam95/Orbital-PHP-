@@ -19,9 +19,8 @@ include('db.php');
         else
         {
             mysql_query("insert into users(name,email,password) values('".$name."','".$email."','".$password."'");
-            $message = "Signup Sucessfully!!";
+            header("Location:Code_Login.php");
         }
-        echo $message;
 }
 ?>
 
@@ -171,6 +170,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <input name="name" type="text" placeholder="Name"/>
       <input name="email" type="text" placeholder="Email"/>
       <input name="password" type="password" placeholder="Password"/>
+      <?php
+      	if (!empty($message)) {
+      		echo $message;
+      	}
+      ?>
       <input name="action" type="hidden" value="signup" /></p>
       <input type="submit" value="Sign Up"/>
       <p class="message">Already registered? <a href="Code_Login.php">Sign In</a></p>
