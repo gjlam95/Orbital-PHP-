@@ -12,7 +12,8 @@ include('db.php');
         else
         {
             $message = "Invalid email or password!!";
-        }        
+        }
+        echo $message;
 }
 ?>
 
