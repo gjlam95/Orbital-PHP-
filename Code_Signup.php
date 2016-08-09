@@ -21,6 +21,7 @@ include('db.php');
             mysql_query("insert into users(name,email,password) values('".$name."','".$email."','".$password."'");
             $message = "Signup Sucessfully!!";
         }
+        echo $message;
 }
 ?>
 
