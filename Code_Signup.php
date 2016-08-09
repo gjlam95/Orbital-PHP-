@@ -18,8 +18,8 @@ include('db.php');
         }
         else
         {
-            mysql_query("insert into users(name,email,password) values('".$name."','".$email."','".$password."'");
-            header("Location:Code_Login.php");
+            mysqli_query($connection,"insert into users(name,email,password) values('$name','$email','$password')");
+           $message = "Success!";
         }
 }
 ?>
@@ -171,7 +171,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <input name="email" type="text" placeholder="Email"/>
       <input name="password" type="password" placeholder="Password"/>
       <?php
-      	if (!empty($message)) {
+      	if ($message=="Success!") {
+		echo "Registered!";
+	}
+	elseif (!empty($message)) {
       		echo $message;
       	}
       ?>
