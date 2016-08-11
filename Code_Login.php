@@ -1,10 +1,10 @@
 <?php
 include('dbconnect.php');
 	if($_POST['action']=="login") {
-        $email = mysqli_real_escape_string($_POST['email']);
-        $password = mysqli_real_escape_string($_POST['password']);
-        $strSQL = mysqli_query("select name from users where email='".$email."' and password='".$password."'");
-        $Results = mysqli_fetch_array($strSQL);
+        $email = mysql_real_escape_string($_POST['email']);
+        $password = mysql_real_escape_string($_POST['password']);
+        $strSQL = mysql_query("select name from users where email='".$email."' and password='".$password."'");
+        $Results = mysql_fetch_array($strSQL);
         if(count($Results)>=1)
         {
             $_SESSION["in"]=$row["id"];
