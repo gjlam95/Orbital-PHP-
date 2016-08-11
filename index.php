@@ -1,3 +1,16 @@
+<?php
+ob_start();
+session_start();
+include("dbconnect.php");
+
+if($_SESSION["in"])
+{
+	$uid=$_SESSION["in"];
+}
+
+$name=mysql_query("select name from users where id = '$uid'");
+?>
+
 <!DOCTYPE html>
 <html>
 <title>MINYSTERY</title>
@@ -28,7 +41,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <a href="Code_Mathematics.php" class="w3-padding">Mathematics</a>
   <a href="Code_Guessing.php" class="w3-padding">Guessing</a>
   <a href="Code_Miscellaneous.php" class="w3-padding">Miscellaneous</a>
-   
+  <?php
+  	echo "Welcome" . $name . "!";
+  ?>
 </nav>
 
 <!-- Overlay effect when opening sidenav on small screens -->
