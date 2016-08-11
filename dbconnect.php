@@ -1,10 +1,10 @@
 <?php
 
-$conn = mysql_connect("mysql.1freehosting.com","u705835408_user","900112");
+$conn = mysql_connect("mysql.1freehosting.com","u280490006_orbit","s9500795c");
 
 if($conn)
 {
-	mysql_select_db("u705835408_data");
+	mysql_select_db("u280490006_orbit");
 }
 else
 {
