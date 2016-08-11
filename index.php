@@ -8,7 +8,8 @@ if($_SESSION["in"])
 	$uid=$_SESSION["in"];
 }
 
-$name=mysql_query("select name from users where id = '$uid'");
+$playername=mysql_query("select name from users where id = '$uid'");
+$playerrow=mysql_fetch_assoc($playername);
 ?>
 
 <!DOCTYPE html>
@@ -41,9 +42,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <a href="Code_Mathematics.php" class="w3-padding">Mathematics</a>
   <a href="Code_Guessing.php" class="w3-padding">Guessing</a>
   <a href="Code_Miscellaneous.php" class="w3-padding">Miscellaneous</a>
-  <?php
-  	echo "Welcome" . $name . "!";
-  ?>
+  <p>Welcome <?php
+  	echo " " . $playerrow['name'] . "!";
+  ?> </p>
 </nav>
 
 <!-- Overlay effect when opening sidenav on small screens -->
