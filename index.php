@@ -8,8 +8,8 @@ if($_SESSION["in"])
 	$uid=$_SESSION["in"];
 }
 
-$playername=mysql_query("select * from users where id = '$uid'");
-$playerrow=mysql_fetch_assoc($playername);
+$pname = mysql_query("select * from users where id = '$uid'");
+$prow = mysql_fetch_assoc($pname);
 ?>
 
 <!DOCTYPE html>
@@ -44,7 +44,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <a href="Code_Miscellaneous.php" class="w3-padding">Miscellaneous</a>
   <p>Welcome <?php
   	if $_SESSION["in"] {
-  	echo " " . $playerrow['name'] . "!";
+  	echo " " . $prow['name'] . "!";
   	}
   ?> </p>
 </nav>
