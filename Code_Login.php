@@ -5,7 +5,7 @@ include('dbconnect.php');
 
 if($_SESSION["in"])
 {
-	$cid=$_SESSION["in"];
+	$uid=$_SESSION["in"];
 	header("Location:index.php");
 }
 
