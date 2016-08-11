@@ -126,7 +126,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       <!-- Horizontal dropdown menu -->
 <ul>
   <li>
-    <a class="active" href="Code_Home.html">Home</a>
+    <a class="active" href="index.php">Home</a>
   </li>
   <li class="dropdown">
     <a href="#" class="dropbtn">Level 1</a>
