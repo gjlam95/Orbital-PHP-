@@ -1,12 +1,12 @@
 <?php
-include('db.php');
+include('dbconnect.php');
 	if($_POST['action']=="signup")
 	{
-        $name       = mysqli_real_escape_string($connection,$_POST['name']);
-        $email      = mysqli_real_escape_string($connection,$_POST['email']);
-        $password   = mysqli_real_escape_string($connection,$_POST['password']);
+        $name       = mysqli_real_escape_string($_POST['name']);
+        $email      = mysqli_real_escape_string($_POST['email']);
+        $password   = mysqli_real_escape_string($_POST['password']);
         $query = "SELECT email FROM users where email='".$email."'";
-        $result = mysqli_query($connection,$query);
+        $result = mysqli_query($query);
         $numResults = mysqli_num_rows($result);
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) // Validate email address
         {
@@ -18,7 +18,7 @@ include('db.php');
         }
         else
         {
-            mysqli_query($connection,"insert into users(name,email,password) values('$name','$email','$password')");
+            mysqli_query("insert into users(name,email,password) values('$name','$email','$password')");
            $message = "Success!";
         }
 }
