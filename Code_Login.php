@@ -2,6 +2,13 @@
 ob_start();
 session_start();
 include('dbconnect.php');
+
+if($_SESSION["in"])
+{
+	$cid=$_SESSION["in"];
+	header("Location:index.php");
+}
+
 	if($_POST['action']=="login") {
         $email = mysql_real_escape_string($_POST['email']);
         $password = mysql_real_escape_string($_POST['password']);
