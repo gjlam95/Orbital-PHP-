@@ -1,4 +1,6 @@
 <?php
+ob_start();
+session_start();
 include('dbconnect.php');
 	if($_POST['action']=="signup")
 	{
