@@ -1,8 +1,26 @@
 <?php
 include('dbconnect.php');
-	if($_POST['action']=="delete")
-	{
-    
+if($_POST['action']=="delete")
+{
+	$name       = mysql_real_escape_string($_POST['name']);
+        $email      = mysql_real_escape_string($_POST['email']);
+        $password   = mysql_real_escape_string($_POST['password']);
+        $query = "SELECT email FROM users where email='".$email."'";
+        $result = mysql_query($query);
+        $numResults = mysql_num_rows($result);
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) // Validate email address
+        {
+            $message =  "Invalid email address please type a valid email!!";
+        }
+        elseif($numResults>=1)
+        {
+            $message = $email." Email already exist!!";
+        }
+        else
+        {
+            mysql_query("insert into users(name,email,password) values('$name','$email','$password')");
+           $message = "Success!";
+        }
 }
 ?>
 
