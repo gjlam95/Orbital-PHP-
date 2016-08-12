@@ -180,7 +180,7 @@ echo "<a href='Code_Delete.php'>Delete account</a>";
   <header class="w3-container">
     <a href="#"><img src="img_avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <h1><b>Home</b></h1>
+    <h1><b>Sign Up</b></h1>
   </header>
  	<div>
     <div class="login-page">
