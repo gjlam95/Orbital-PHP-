@@ -1,6 +1,4 @@
 <?php
-ob_start();
-session_start();
 include('dbconnect.php');
 
 if($_SESSION["in"])
@@ -12,11 +10,11 @@ if($_SESSION["in"])
 	if($_POST['action']=="login") {
         $email = mysql_real_escape_string($_POST['email']);
         $password = mysql_real_escape_string($_POST['password']);
-        $strSQL = mysql_query("select name from users where email='".$email."' and password='".$password."'");
+        $strSQL = mysql_query("select * from users where email='".$email."' and password='".$password."'");
         $Results = mysql_fetch_array($strSQL);
         if(count($Results)>=1)
         {
-            $_SESSION["in"]=$row["id"];
+            $_SESSION["in"]=$Results["id"];
             header("Location:index.php");
         }
         else
@@ -150,6 +148,15 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <a href="Code_Mathematics.php" class="w3-padding">Mathematics</a>
   <a href="Code_Guessing.php" class="w3-padding">Guessing</a>
   <a href="Code_Miscellaneous.php" class="w3-padding">Miscellaneous</a>
+  <p>Welcome <?php
+  	if ($_SESSION["in"]) {
+  	echo " " . $prow['name'] . "!";
+  	}
+	
+	else {
+	echo "Guest!";
+	}
+  ?> </p>
    
 </nav>
 

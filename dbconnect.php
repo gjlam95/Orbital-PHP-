@@ -1,4 +1,6 @@
 <?php
+ob_start();
+session_start();
 
 $conn = mysql_connect("mysql.1freehosting.com","u280490006_orbit","s9500795c");
 

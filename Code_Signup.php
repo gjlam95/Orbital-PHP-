@@ -1,6 +1,4 @@
 <?php
-ob_start();
-session_start();
 include('dbconnect.php');
 	if($_POST['action']=="signup")
 	{
@@ -150,6 +148,15 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <a href="Code_Mathematics.php" class="w3-padding">Mathematics</a>
   <a href="Code_Guessing.php" class="w3-padding">Guessing</a>
   <a href="Code_Miscellaneous.php" class="w3-padding">Miscellaneous</a>
+  <p>Welcome <?php
+  	if ($_SESSION["in"]) {
+  	echo " " . $prow['name'] . "!";
+  	}
+	
+	else {
+	echo "Guest!";
+	}
+  ?> </p>
    
 </nav>
 
