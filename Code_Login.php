@@ -11,11 +11,12 @@ if($_SESSION["in"])
         $email = mysql_real_escape_string($_POST['email']);
         $password = mysql_real_escape_string($_POST['password']);
         $strSQL = mysql_query("select * from users where email='".$email."' and password='".$password."'");
-        $Results = mysql_fetch_array($strSQL);
-        if(count($Results)>=1)
+
+        $Results = mysql_fetch_assoc($strSQL);
+        if(count($Results)>1)
         {
             $_SESSION["in"]=$Results["id"];
-            header("Location:index.php");
+	    header("Location:index.php");	
         }
         else
         {
@@ -150,7 +151,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <a href="Code_Miscellaneous.php" class="w3-padding">Miscellaneous</a>
   <p>Welcome <?php
   	if ($_SESSION["in"]) {
-  	echo " " . $prow['name'] . "!";
+  	echo $prow['name'] . "!, " . "<a href='logout.php'>Logout</a>";
+echo "<a href='Code_Delete.php'>Delete account</a>";
   	}
 	
 	else {
@@ -183,7 +185,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       		echo $message;
       	}
       ?>
-      <input name="action" type="hidden" value="login" /></p>
+      <input name="action" type="hidden" value="login" />
       <input type="submit" value="Log In"/>
       <p class="message">Not registered? <a href="Code_Signup.php">Create an account</a></p>
     </form>

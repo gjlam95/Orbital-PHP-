@@ -1,5 +1,14 @@
 <?php
 include('dbconnect.php');
+
+if($_SESSION["in"])
+{
+	$uid=$_SESSION["in"];
+}
+
+$pname = mysql_query("select * from users where id = '$uid'");
+$prow = mysql_fetch_assoc($pname);
+
 	if($_POST['action']=="signup")
 	{
         $name       = mysql_real_escape_string($_POST['name']);
@@ -150,7 +159,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <a href="Code_Miscellaneous.php" class="w3-padding">Miscellaneous</a>
   <p>Welcome <?php
   	if ($_SESSION["in"]) {
-  	echo " " . $prow['name'] . "!";
+  	echo $prow['name'] . "!, " . "<a href='logout.php'>Logout</a>";
+echo "<a href='Code_Delete.php'>Delete account</a>";
   	}
 	
 	else {
@@ -187,7 +197,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       		echo $message;
       	}
       ?>
-      <input name="action" type="hidden" value="signup" /></p>
+      <input name="action" type="hidden" value="signup" />
       <input type="submit" value="Sign Up"/>
       <p class="message">Already registered? <a href="Code_Login.php">Sign In</a></p>
     </form>

@@ -1,21 +1,30 @@
 <?php
 include('dbconnect.php');
+
+if($_SESSION["in"])
+{
+	$uid=$_SESSION["in"];
+}
+
+$pname = mysql_query("select * from users where id = '$uid'");
+$prow = mysql_fetch_assoc($pname);
+
 if($_POST['action']=="delete")
 {
         $email      = mysql_real_escape_string($_POST['email']);
         $password   = mysql_real_escape_string($_POST['password']);
         $query = "SELECT * FROM users where email='".$email."' and password='".$password."' and id='".$uid."'";
         $result = mysql_query($query);
-        $numResults = mysql_num_rows($result);
-        if ($numResults<1)
+        $numResults = mysql_fetch_assoc($result);
+        if (count($numResults)<=1)
         {
             $message = "Invalid email!!";
         }
         else
         {
-           DELETE FROM users WHERE id='".$uid."';
+           mysql_query("DELETE FROM users WHERE id='$uid'");
            $message = "Success!";
-           header(Location:logout.php);
+           header("Location:logout.php");
         }
 }
 ?>
@@ -138,7 +147,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <h4 class="w3-padding-0"><b>Minystery</b></h4>
     <p class="w3-text-grey">Series of mini-games</p>
   </div>
-  <a href="index.php" class="w3-padding">Home</a>
+  <a href="index.php" class="w3-padding">Delete Account</a>
   <a href="Code_Login.php" class="w3-padding w3-text-teal">Log In</a>
   <a href="Code_Detective.php" class="w3-padding">Detective</a>
   <a href="Code_Mathematics.php" class="w3-padding">Mathematics</a>
@@ -182,7 +191,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       		echo $message;
       	}
       ?>
-      <input name="action" type="hidden" value="delete" /></p>
+      <input name="action" type="hidden" value="delete" />
       <input type="submit" value="Confirm"/>
     </form>
   </div>
