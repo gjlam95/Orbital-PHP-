@@ -147,7 +147,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <h4 class="w3-padding-0"><b>Minystery</b></h4>
     <p class="w3-text-grey">Series of mini-games</p>
   </div>
-  <a href="index.php" class="w3-padding">Delete Account</a>
+  <a href="index.php" class="w3-padding">Home</a>
   <a href="Code_Login.php" class="w3-padding w3-text-teal">Log In</a>
   <a href="Code_Detective.php" class="w3-padding">Detective</a>
   <a href="Code_Mathematics.php" class="w3-padding">Mathematics</a>
@@ -175,7 +175,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <header class="w3-container">
     <a href="#"><img src="img_avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <h1><b>Home</b></h1>
+    <h1><b>Delete Account</b></h1>
   </header>
  	<div>
     <div class="login-page">
