@@ -2,24 +2,20 @@
 include('dbconnect.php');
 if($_POST['action']=="delete")
 {
-	$name       = mysql_real_escape_string($_POST['name']);
         $email      = mysql_real_escape_string($_POST['email']);
         $password   = mysql_real_escape_string($_POST['password']);
-        $query = "SELECT email FROM users where email='".$email."'";
+        $query = "SELECT * FROM users where email='".$email."' and password='".$password."' and id='".$uid."'";
         $result = mysql_query($query);
         $numResults = mysql_num_rows($result);
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) // Validate email address
+        if ($numResults<1)
         {
-            $message =  "Invalid email address please type a valid email!!";
-        }
-        elseif($numResults>=1)
-        {
-            $message = $email." Email already exist!!";
+            $message = "Invalid email!!";
         }
         else
         {
-            mysql_query("insert into users(name,email,password) values('$name','$email','$password')");
+           DELETE FROM users WHERE id='".$uid."';
            $message = "Success!";
+           header(Location:logout.php);
         }
 }
 ?>
@@ -176,7 +172,6 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <div class="login-page">
   <div class="form">
     <form class="register-form" action="" method="post">
-      <input name="name" type="text" placeholder="Name"/>
       <input name="email" type="text" placeholder="Email"/>
       <input name="password" type="password" placeholder="Password"/>
       <?php
