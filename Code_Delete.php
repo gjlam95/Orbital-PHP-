@@ -23,8 +23,7 @@ if($_POST['action']=="delete")
         else
         {
            mysql_query("DELETE FROM users WHERE id='$uid'");
-           $message = "Success!";
-           header("Location:logout.php");
+	   header("Location:logout.php");
         }
 }
 ?>
@@ -184,10 +183,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <input name="email" type="text" placeholder="Email"/>
       <input name="password" type="password" placeholder="Password"/>
       <?php
-      	if ($message=="Success!") {
-		echo "Account deleted!";
-	}
-	elseif (!empty($message)) {
+	if (!empty($message)) {
       		echo $message;
       	}
       ?>

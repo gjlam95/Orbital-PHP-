@@ -1,3 +1,15 @@
+<?php
+include("dbconnect.php");
+
+if($_SESSION["in"])
+{
+	$uid=$_SESSION["in"];
+}
+
+$pname = mysql_query("select * from users where id = '$uid'");
+$prow = mysql_fetch_assoc($pname);
+?>
+
 <!DOCTYPE html>
 <html>
 <title>The Gift</title>
@@ -184,4 +196,3 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 </body>
 </html>
-
