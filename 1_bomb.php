@@ -13,7 +13,7 @@
                 }
             }
             if (tempType == 'hall') {
-                var next = confirm("Correct!\n\n" + "Doctor Melon wrapped the gift in the Mahjong Room. Then then walked to the Games Room, the Lounge, the Library, the Hall, the Living Room, and the Dining Room. Plum remembered still having the gift with him in the Library. So we can rule out the rooms he was in before the Library: the Mahjong Room, the Games Room, and the Lounge. Mrs Blank and General Lemon checked the Living Room and Library. And Doctor Melon came into the Dining Room empty-handed. That leaves only the Hall.");
+                var next = confirm("Correct!\n\n" + "Doctor Melon wrapped the gift in the Mahjong Room. Then then walked to the Games Room, the Lounge, the Library, the Hall, the Living Room, and the Dining Room. Melon remembered still having the gift with him in the Library. So we can rule out the rooms he was in before the Library: the Mahjong Room, the Games Room, and the Lounge. Mrs Blank and General Lemon checked the Living Room and Library. And Doctor Melon came into the Dining Room empty-handed. That leaves only the Hall.");
                 if (next == true) {
                    window.history.back();
                }
@@ -140,7 +140,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <div class="w3-row">
     <div class="w3-twothird w3-container">
       <h1 class="w3-text-teal">In the Dining Room</h1>
-      <p>General Lemon: "Ah Professor - we've all given Mr Leaf our gifts. Maybe now would be a good time for you to give him your present."
+      <p>General Lemon: "Ah Doctor - we've all given Mr Leaf our gifts. Maybe now would be a good time for you to give him your present."
         <p>Doctor Melon: "My present? Mmm, now where did I leave it?"</p>
         <p>Mr Leaf: "Oh great! First you forget my party, then you forget my present. What's next?"</p>
         <p>Doctor Melon: "I forget. Uh-oh. I just remembered something else. I got you two presents. And the second present is a time bomb that's going to go off in about... Oh I'd say ninety seconds."</p>
@@ -154,7 +154,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     </div>
     <div class="w3-third w3-container">
      <img src="http://nymag.com/images/2/daily/entertainment/07/10/12_bomb_lgl.jpg" style="width:90%;height:80%">
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
     </div>
   </div>
 
@@ -175,10 +174,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <br>
             <input type="button" value="Check" onclick="processPage()">
         </form>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
     </div>
   </div>
 
