@@ -130,9 +130,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <p>The guests are playing a game of Hide-And-Seek in the mansion. The Kitchen was their home base and no one was allowed to hide in there, leaving all other rooms as possible hiding spots. In the midst of their game, a fire broke out and the guests scrambled about to flee the mansion quickly. Mrs Blank was nowhere to be found and the guests only have time to go to ONE of the rooms to find her. They started telling one another the rooms they've checked before leaving the mansion. Which room is Mrs Blank in?
 </p>
     </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
+     <div class="w3-third w3-container">
+      <img src="http://vignette2.wikia.nocookie.net/creepypasta/images/4/40/Fire_interior.jpg/revision/latest?cb=20140411030239" style="width:90%;height:80%"> 
     </div>
   </div>
 
@@ -143,12 +142,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <p>Miss Rose: "I checked the Mahjong Room and the Games Room. Neither was she in those two rooms."</p>
 <p>Mrs Rainbow: "I checked the Hall and the Lounge. She's nowhere to be seen there!"</p>
 <p>Doctor Melon: "Uh, I checked either the Dining Room, the Study. or the Games Room. I can't remember which."</p>
-<p>General Lemon: "Seriously Plum! As I was dashing out, I managed to check the Dining Room and she wasn't in there."</p>
+<p>General Lemon: "Seriously Melon! As I was dashing out, I managed to check the Dining Room and she wasn't in there."</p>
 <p>As luck would have it, no two rooms were checked twice.</p>
     </div>
     <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
+      <img src="http://wargamesbuildings.co.uk/WebRoot/Namesco/Shops/950003459/MediaGallery/Hobby_Articles/Pulp_Alley_Cluedo_BLAM_2015/Pulp_Alley_Cluedo_BLAM_2015_4.jpg" style="width:90%;height:80%"> 
     </div>
   </div>
 
@@ -169,10 +167,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <br>
   <input type="button" value="Check" onclick="processPage()">
 </form>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
     </div>
   </div>
 

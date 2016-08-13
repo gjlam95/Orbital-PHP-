@@ -13,7 +13,7 @@
         }
       }
       if (tempType == 'white') {
-        var next = confirm("Correct!\n\n" + "Gags:\n" + "Mr Leaf helping Mrs Blank put her head on the tray. Green 1, White 1\n" + "Doctor Melon putting the Knife in his head. Plum 1\n" + "General Lemon and Miss Rose faking her murder. Mustard 1, Scarlett 1\n" + "Mr Leaf and General Lemon faking a duel to the death, with Mrs Rainbow's help. Green 2, Mustard 2, Peacock 1\n" + "Doctor Melon and Miss Rose staging a fake shooting. Plum 2 Scarlett 2\n" + "Only Mrs Rainbow and Mrs Blank performed one gag before the final incident occured.\n");
+        var next = confirm("Correct!\n\n" + "Gags:\n" + "Mr Leaf helping Mrs Blank put her head on the tray. Green 1, Blank 1\n" + "Doctor Melon putting the Knife in his head. Melon 1\n" + "General Lemon and Miss Rose faking her murder. Lemon 1, Rose 1\n" + "Mr Leaf and General Lemon faking a duel to the death, with Mrs Rainbow's help. Leaf 2, Lemon 2, Rainbow 1\n" + "Doctor Melon and Miss Rose staging a fake shooting. Melon 2 Rose 2\n" + "Only Mrs Rainbow and Mrs Blank performed one gag before the final incident occured.\n");
         if (next == true) {
           window.history.back();
         }
@@ -130,8 +130,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
  <p>It was April Fools' Day, and Mr Basil had invited his regular six guests over to spend the weekend. As usual, weird things are bound to happen when these people are gathered together in one place. Follow the conversations to see the various gags the guests are up to.</p>
     </div>
     <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
+    <img src="http://marketingland.com/wp-content/ml-loads/2015/04/april-fools-day1-ss-1920-800x450.jpg" style="width:90%;height:80%">
     </div>
   </div>
 
@@ -176,8 +175,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <p>Miss Rose: "This is what comes from too much April Fooling. Someone went overboard here"</p>
     </div>
     <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
+    <img src="https://thumbs.dreamstime.com/t/old-american-gun-hand-drawing-antique-revolver-41527229.jpg" style="width:90%;height:80%">
     </div>
   </div>
 
@@ -198,8 +196,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   </form>
     </div>
     <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
+    <img src="http://www.jamaicaobserver.com/assets/10771017/crime--2-.jpg" style="width:90%;height:80%">
     </div>
   </div>
 

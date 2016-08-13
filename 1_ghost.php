@@ -22,7 +22,7 @@
       else {
         var next = confirm("Wrong!\n\n" + "Hint?");
         if (next == true) {
-          alert("Doctor Melon was holding on to Mrs Blank and Miss Roses' hands.\n" +  "Mr Leaf was holding on to General Lemon and Mr Basils' hands.\n" + "Mrs Rainbow was holding on to General Lemon's hand.\n" + "Miss Rose was holding on to Doctor Melon and Mr Basils' hands.\n" + "Mrs Blank was holding on to Professor Plm's hand.\n\n" + "Hmm,there are still two guests with one hand underneath the table, but one of them is holding an item which could not possibly make the crisp rapping noise...")
+          alert("Doctor Melon was holding on to Mrs Blank and Miss Roses' hands.\n" +  "Mr Leaf was holding on to General Lemon and Mr Basils' hands.\n" + "Mrs Rainbow was holding on to General Lemon's hand.\n" + "Miss Rose was holding on to Doctor Melon and Mr Basils' hands.\n" + "Mrs Blank was holding on to Doctor Melon's hand.\n\n" + "Hmm,there are still two guests with one hand underneath the table, but one of them is holding an item which could not possibly make the crisp rapping noise...")
         }
       }
     }
@@ -136,8 +136,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </p>
     </div>
     <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
+    <img src="https://lh5.googleusercontent.com/-Fol0zEV5zI4/UB8VtY4w0nI/AAAAAAAAgdo/gyVYCNxEbtU/s640/DSC03760.JPG" style="width:90%;height:80%">
     </div>
   </div>
 
@@ -153,8 +152,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <p>Mrs Blank: "I brought the Candlestick as I was afraid the Dining Room's lights will blow again. Doctor Melon has really sweaty palms!"</p>
     </div>
     <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
+    <img src="https://t4.ftcdn.net/jpg/00/54/52/79/240_F_54527976_c6nbyODxFlmaDjDvmJ9AShJbT8hJ2QNU.jpg" style="width:90%;height:80%">
+    <img src="https://img0.etsystatic.com/000/0/5314417/il_fullxfull.172516092.jpg" style="width:90%;height:80%">
     </div>
   </div>
 
@@ -172,10 +171,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <br>
   <input type="button" value="Check" onclick="processPage()">
 </form>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
     </div>
   </div>
 

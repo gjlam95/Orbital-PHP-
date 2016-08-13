@@ -131,8 +131,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </p>
     </div>
     <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
+      <img src="http://johannapickel.com/wp-content/uploads/2014/01/last-will-and-testament-1.jpg" style="width:90%;height:80%"> 
     </div>
   </div>
 
@@ -143,7 +142,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <p>Mr Leaf: "I see, and you're innocent?"</p>
 <p>Miss Rose: "We all loved him, but we all love money too."</p>
 <p>Doctor Melon: "It's true. Any one of us could have done it. We all have the same motive."</p>
-<p>Mrs Rainbow: "Were you in the Library last night, Professor?"</p>
+<p>Mrs Rainbow: "Were you in the Library last night, Doctor?"</p>
 <p>Doctor Melon: "Yes. But only to borrow a book on butterfly collecting. Mr Basil was alive and well at the time. I might add, I was there before you, Mrs Rainbow."</p>
 <p>Mrs Rainbow: "Well! Mr Leaf was in the Library after me."</p>
 <p>Mrs Blank: "And Doctor Melon was in the Library after me."</p>
@@ -151,8 +150,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <p>General Lemon: "I was in the Library before Mr Leaf."</p>
     </div>
     <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
+      <img src="http://cdn.londonandpartners.com/visit/generic/objects/76659-640x360-british-money-coins-640.jpg" style="width:90%;height:80%"> 
+      <img src="http://www.abebooks.com/images/books/collectible-butterfly-moth-lepidoptera/butterfly-moth-collecting-simms.jpg" style="width:50%; height:40%">
     </div>
   </div>
 
@@ -170,10 +169,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <br>
   <input type="button" value="Check" onclick="processPage()">
   </form>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
     </div>
   </div>
 

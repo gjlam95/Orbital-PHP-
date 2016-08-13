@@ -130,8 +130,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <p>Mr Basil's mansion was on fire again. One of the three guests, Doctor Melon, Miss Rose and Mrs Rainbow, is the culprit. To solve this mystery, you'll need to determine which statements are true and which statements are false. Mark all of the statements T for True or F for False. The culprit will be the only person who said three lies (i.e three F out of the five statements).</p>
     </div>
     <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
+      <img src="http://vignette2.wikia.nocookie.net/creepypasta/images/4/40/Fire_interior.jpg/revision/latest?cb=20140411030239" style="width:90%;height:80%"> 
     </div>
   </div>
 
@@ -142,11 +141,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <p>#2 "The fire was out before I went to be bed," said Miss Rose.</p>
   <p>#3 "I turned the stove off before the fire started," said Mrs Blank.</p>
   <p>#4 "Mrs Blank, your statement is a lie," Doctor Melon accused.</p>
-  <p>#5 "No, Professor, your first statement is a lie," said Miss Rose.</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
+  <p>#5 "No, Doctor, your first statement is a lie," said Miss Rose.</p>
     </div>
   </div>
 
@@ -164,10 +159,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <br>
     <input type="button" value="Check" onclick="processPage()">
   </form>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
     </div>
   </div>
 

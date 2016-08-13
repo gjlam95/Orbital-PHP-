@@ -127,11 +127,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
       <h1 class="w3-text-teal">Background</h1>
-<p>Doctor Melon has been spying on Mr Basil. Mr Basil was a consultant for a local gumdrop company. These documents detailed Boddy's discovery: a way to make gumdrops that lasted in your mouth for hours! A rival gumdrop company had hired Plum to find out the secret. Doctor Melon broke into the Mr Basil's bedroom drawer and photographed his secret documents. He snapped a whole roll of film. He quickly removed the roll from the camera and slipped it into the right pocket of his purple cardigan sweater. He then went back to the Library to join the rest of the guests.</p>
+<p>Doctor Melon has been spying on Mr Basil. Mr Basil was a consultant for a local gumdrop company. These documents detailed Basil's discovery: a way to make gumdrops that lasted in your mouth for hours! A rival gumdrop company had hired Melon to find out the secret. Doctor Melon broke into the Mr Basil's bedroom drawer and photographed his secret documents. He snapped a whole roll of film. He quickly removed the roll from the camera and slipped it into the right pocket of his purple cardigan sweater. He then went back to the Library to join the rest of the guests.</p>
     </div>
     <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
+      <img src="https://pbs.twimg.com/profile_images/498206432462786560/cTBRJLjW_400x400.jpeg" style="width:90%;height:80%"> 
     </div>
   </div>
 
@@ -142,13 +141,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <p>He leaned over and pulled an egg from behind Doctor Melon's ear.</p>
   <p>Everyone laughed and applauded.</p>
   <p>Doctor Melon was feeling uncomfortable but Mr Leaf continued to pat him up and down, searching for a chicken.</p>
-  <p>And now he was patting the right pocket of Plum's purple cardigan.</p>
+  <p>And now he was patting the right pocket of Melon's purple cardigan.</p>
   <p>Mr Leaf felt the roll of film. The roll of spy film</p>
   <p>Mr Leaf pulled a chicken out of Doctor Melon's right pocket to mask the fact that he had stole the roll of film from Doctor Melon.</p>
   <p>General Lemon clapped Mr Leaf on the back, to commend him of his magic trick.</p>
   <p>However, he wasn't just patting Mr Leaf to be nice.</p>
-  <p>He had seen Mr Leaf steal the Professor's roll of film and had figured out it must be valuable.</p>
-  <p>o now, he slipped his hand into Mr Leaf's pocket and stole one of the two rolls (One was the secret roll which Plum stole and the other was Mr Leaf's magic tricks prop).</p>
+  <p>He had seen Mr Leaf steal the Doctor's roll of film and had figured out it must be valuable.</p>
+  <p>o now, he slipped his hand into Mr Leaf's pocket and stole one of the two rolls (One was the secret roll which Melon stole and the other was Mr Leaf's magic tricks prop).</p>
   <p>He added the roll to his own roll of personal film already in his pocket.</p>
   <p>Doctor Melon went up to General Lemon to offer a lighter for his cigarette.</p>
   <p>At the same time, he slapped the Colonel's pockets and secretly took both rools of film from it.</p>
@@ -160,8 +159,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <p>And if he doesn't, who does?</p>
     </div>
     <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
+      <img src="http://decryptedmatrix.com/wp-content/uploads/2013/04/top-secret-documents.jpg" style="width:90%;height:80%"> 
+      <img src="http://az616578.vo.msecnd.net/files/2015/11/23/6358384958345414014149972_Film-reel.jpeg" style="width:90%;height:80%"> 
     </div>
   </div>
 
@@ -170,7 +169,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       <h1 class="w3-text-teal">Who has the roll of film?</h1>
   <form name="ansForm">
     <p>Answer:</p>
-    <input type="radio" name="choice" value="plum">Doctor Melon<br>
+    <input type="radio" name="choice" value="Melon">Doctor Melon<br>
     <input type="radio" name="choice" value="white">Mrs Blank<br>
     <input type="radio" name="choice" value="scarlett">Miss Rose<br>
     <input type="radio" name="choice" value="green">Mr Leaf<br>
@@ -179,10 +178,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <br>
     <input type="button" value="Check" onclick="processPage()">
   </form>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
     </div>
   </div>
 

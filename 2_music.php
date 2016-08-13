@@ -131,8 +131,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </p>
     </div>
     <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
+          <img src="http://imgc.allpostersimages.com/images/P-473-488-90/8/847/9GUY000Z/posters/arturo-ricci-an-afternoon-concert.jpg" style="width:90%;height:80%"> 
     </div>
   </div>
 
@@ -152,8 +151,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <p>Mr Leaf: "Give us back Mr Basil's fiddle, you old crone!"</p>
     </div>
     <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
+      <img src="http://www.alux.com/wp-content/uploads/2013/12/3violin.jpg" style="width:90%;height:80%"> 
     </div>
   </div>
 
@@ -171,10 +169,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <br>
   <input type="button" value="Check" onclick="processPage()">
 </form>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
     </div>
   </div>
 

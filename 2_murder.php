@@ -160,8 +160,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </p>
     </div>
     <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
+      <img src="http://www.honduras.com/wp-content/uploads/2012/05/newspaper.jpg" style="width:90%;height:80%"> 
     </div>
   </div>
 
@@ -186,10 +185,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <p>--Mrs Rainbow crawled out from hiding and flicked on the lights--</p>
         <p>--She bent over the first attacker. The unconscious figure was clutching the Knife. She pulled up the mask--</p>
         <p>Mrs Rainbow: "Doctor Melon. Tsk, tsk. What a bad boy you are!"</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
     </div>
   </div>
 
@@ -247,10 +242,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <br>
             <input type="button" value="Check" onclick="processPage()">
         </form>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-medium w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-medium w3-padding-64 w3-center">AD</p>
     </div>
   </div>
 
