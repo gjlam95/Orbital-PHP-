@@ -9,9 +9,11 @@ if($_SESSION["in"])
 $pname = mysql_query("select * from users where id = '$uid'");
 $prow = mysql_fetch_assoc($pname);
 
-	if ($_GET['score']) {
-  $points = ($_GET['score']);
- mysql_query("insert into userscore(user_id,points) values('$uid','$points')");
+if ($_GET['score']) {
+$points = ($_GET['score']);
+if($_SESSION["in"]) {
+	mysql_query("insert into userscore(user_id,points) values('$uid','$points')");
+}
 }
 ?>
 
