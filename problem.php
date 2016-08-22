@@ -16,7 +16,11 @@ function CountDown() {
       else if (time==0)
         {document.math.timer.value="0";
       timesup=1;
-      alert('Time\'s Up!');
+      var next = confirm('Time\'s Up!');
+      if (next==true) {
+        var score = document.math.points.value;
+        window.location.href="problem.php?score";
+      }
       document.math.firstnum.value="";
       document.math.operator.value="";
       document.math.secondnum.value="";
@@ -88,12 +92,7 @@ function answerit()
   else
   {
     if (timesup!=0)
-      {var next = confirm('Time Ran Out!');
-        if (next==true) {
-          var score = document.math.points.value;
-          window.location.href="problem.php?score";
-        }
-      }
+      {alert('Time Ran Out!');}
     else
     {
       var theiranswer=eval(document.math.answer.value);
