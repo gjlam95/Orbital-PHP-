@@ -18,6 +18,28 @@ $prow = mysql_fetch_assoc($pname);
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 .w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
+
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#t01 th {
+    background-color: black;
+    color: white;
+}
 </style>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
@@ -61,14 +83,44 @@ echo "<a href='Code_Delete.php'>Delete account</a>";
   <header class="w3-container">
     <a href="#"><img src="img_avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <h1><b>Miscellaneous</b></h1>
+    <h1><b>Score</b></h1>
   </header>
   
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="http://www.primitivism.com/miscellaneous-ban.jpg" alt="Misc" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-	<p align="left"><a href="magicSquares.php" align="center">Magic Squares</a></p>
+<table>
+<tr>
+<th>Name</th>
+<th>Problem Sums Score</th>
+<th>Date</th>
+<tr>
+  <tr>
+    <td>John</td>
+    <td>50</td>
+    <td>20-07-2016</td>
+  </tr>
+  <tr>
+    <td>Daniel</td>
+    <td>36</td>
+    <td>30-07-2016</td>
+  </tr>
+  <tr>
+    <td>Victor</td>
+    <td>28</td>
+    <td>01-08-2016</td>
+  </tr>
+  <tr>
+    <td>Michael</td>
+    <td>24</td>
+    <td>05-06-2016</td>
+  </tr>
+  <tr>
+    <td>Emma</td>
+    <td>15</td>
+    <td>19-07-2016</td>
+  </tr>
+</table>
       </div>
     </div>
   </div>
