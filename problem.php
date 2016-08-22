@@ -88,7 +88,12 @@ function answerit()
   else
   {
     if (timesup!=0)
-      {alert('Time Ran Out!');}
+      {var next = confirm('Time Ran Out!');
+        if (next==true) {
+          var score = document.math.points.value;
+          window.location.href=”problem.php?score";
+        }
+      }
     else
     {
       var theiranswer=eval(document.math.answer.value);
