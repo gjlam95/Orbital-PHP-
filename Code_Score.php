@@ -90,36 +90,20 @@ echo "<a href='Code_Delete.php'>Delete account</a>";
     <div class="w3-third w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
 <table>
-<tr>
-<th>Name</th>
-<th>Problem Sums Score</th>
-<th>Date</th>
-<tr>
-  <tr>
-    <td>John</td>
-    <td>50</td>
-    <td>20-07-2016</td>
-  </tr>
-  <tr>
-    <td>Daniel</td>
-    <td>36</td>
-    <td>30-07-2016</td>
-  </tr>
-  <tr>
-    <td>Victor</td>
-    <td>28</td>
-    <td>01-08-2016</td>
-  </tr>
-  <tr>
-    <td>Michael</td>
-    <td>24</td>
-    <td>05-06-2016</td>
-  </tr>
-  <tr>
-    <td>Emma</td>
-    <td>15</td>
-    <td>19-07-2016</td>
-  </tr>
+	<?php
+	$strSQL = mysql_query("select users.id,users.name,userscore.user_id,userscore.points,userscore.datetime from userscore inner join users on users.id=userscore.user_id order by userscore.points DESC");
+        $Results = mysql_fetch_assoc($strSQL);
+	for ($i=0; $i<10; $i++) {
+	?>
+	<tr>
+		<td><?php echo $i+1; ?></td>
+		<td><?php echo $Results['name']; ?></td>
+		<td><?php echo $Results['points']; ?></td>
+		<td><?php echo $Results['datetime']; ?></td>
+	</tr>
+	<?php
+	}
+	?>
 </table>
       </div>
     </div>
