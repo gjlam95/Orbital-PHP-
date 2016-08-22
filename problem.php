@@ -1,14 +1,17 @@
 <?php
-include("dbconnect.php");
+include('dbconnect.php');
+
 if($_SESSION["in"])
 {
 	$uid=$_SESSION["in"];
 }
+
 $pname = mysql_query("select * from users where id = '$uid'");
 $prow = mysql_fetch_assoc($pname);
 
-if ($_GET['score']) {
-  $points = mysql_real_escape_string($_GET['score']);
+	if ($_GET['score']) {
+  $points = ($_GET['score']);
+ mysql_query("insert into userscore(user_id,points) values('$uid','$points')");
 }
 ?>
 
@@ -33,7 +36,7 @@ function CountDown() {
       var next = confirm('Time\'s Up!');
       if (next==true) {
         var score = document.math.points.value;
-        window.location.href="problem.php?score";
+        window.location.href="problem.php?score=" + score;
       }
       document.math.firstnum.value="";
       document.math.operator.value="";
@@ -167,4 +170,3 @@ function showHelp()
       </form>
     </tr>
   </table>
-
