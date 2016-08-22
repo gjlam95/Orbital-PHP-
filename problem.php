@@ -1,3 +1,17 @@
+<?php
+include("dbconnect.php");
+if($_SESSION["in"])
+{
+	$uid=$_SESSION["in"];
+}
+$pname = mysql_query("select * from users where id = '$uid'");
+$prow = mysql_fetch_assoc($pname);
+
+if ($_GET['score']) {
+  $points = mysql_real_escape_string($_GET['score']);
+}
+?>
+
 <HEAD>
 
   <SCRIPT LANGUAGE="JavaScript">
