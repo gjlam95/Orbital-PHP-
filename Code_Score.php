@@ -91,9 +91,9 @@ echo "<a href='Code_Delete.php'>Delete account</a>";
       <div class="w3-container w3-white">
 <table>
 	<?php
-	$strSQL = mysql_query("select users.id,users.name,userscore.user_id,userscore.points,userscore.datetime from userscore inner join users on users.id=userscore.user_id order by userscore.points DESC");
+	$strSQL = mysql_query("select users.id,users.name,userscore.user_id,userscore.points,userscore.datetime from userscore inner join users on users.id=userscore.user_id order by userscore.points DESC limit 0,9");
+	$i=0;
 	while ($Results = mysql_fetch_assoc($strSQL)) {
-	// for ($i=0; $i<10; $i++) {
 	?>
 	<tr>
 		<td><?php echo $i+1; ?></td>
@@ -102,6 +102,7 @@ echo "<a href='Code_Delete.php'>Delete account</a>";
 		<td><?php echo $Results['datetime']; ?></td>
 	</tr>
 	<?php
+	$i++;
 	}
 	?>
 </table>
