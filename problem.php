@@ -21,6 +21,7 @@ function CountDown() {
       document.math.operator.value="";
       document.math.secondnum.value="";
       document.math.answer.value="";
+      window.location.href=”problem.php?points";
     }
   }
   <!--END OF TIMER SCRIPT-->
