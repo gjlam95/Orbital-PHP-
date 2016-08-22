@@ -91,7 +91,7 @@ function answerit()
       {var next = confirm('Time Ran Out!');
         if (next==true) {
           var score = document.math.points.value;
-          window.location.href=”problem.php?score"
+          window.location.href="problem.php?score";
         }
       }
     else
