@@ -92,8 +92,8 @@ echo "<a href='Code_Delete.php'>Delete account</a>";
 <table>
 	<?php
 	$strSQL = mysql_query("select users.id,users.name,userscore.user_id,userscore.points,userscore.datetime from userscore inner join users on users.id=userscore.user_id order by userscore.points DESC");
-        $Results = mysql_fetch_assoc($strSQL);
-	for ($i=0; $i<10; $i++) {
+	while ($Results = mysql_fetch_assoc($strSQL)) {
+	// for ($i=0; $i<10; $i++) {
 	?>
 	<tr>
 		<td><?php echo $i+1; ?></td>
