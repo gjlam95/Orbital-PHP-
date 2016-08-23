@@ -90,6 +90,12 @@ echo "<a href='Code_Delete.php'>Delete account</a>";
     <div class="w3-third w3-container w3-margin-bottom">
       <div class="w3-container w3-white">
 <table>
+	<tr>
+		<td ><span style="font-weight:bold">Rank</span></td>
+		<td ><span style="font-weight:bold">Name</span></td>
+		<td ><span style="font-weight:bold">Score</span></td>
+		<td ><span style="font-weight:bold">Date</span></td>
+	</tr>
 	<?php
 	$strSQL = mysql_query("select users.id,users.name,userscore.user_id,userscore.points,userscore.datetime from userscore inner join users on users.id=userscore.user_id order by userscore.points DESC limit 0,9");
 	$i=0;
