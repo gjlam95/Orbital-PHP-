@@ -140,6 +140,10 @@ function showHelp()
   var msg = "Type your answer in the textbox followed by the *Tab* & *Enter* button to save more time!";
   alert(msg);
 }
+function goBack()
+{
+  window.location.href="problem.php";
+}
 //  End -->
 </script>
 
